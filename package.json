@@ -1,0 +1,37 @@
+{
+  "name": "vote-lah",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "clean": "del dist",
+    "dev": "npm run clean && snowpack dev",
+    "build": "npm run clean && snowpack build",
+    "format": "prettier --write \"src/**/**/*.ts\"",
+    "lint": "prettier --check \"src/**/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/shortdiv/vote-lah"
+  },
+  "keywords": [
+    "singapore",
+    "ge2020"
+  ],
+  "author": "Divya",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@csstools/postcss-sass": "^4.0.0",
+    "autoprefixer": "^9.8.4",
+    "cssnano": "^4.1.10",
+    "del-cli": "^3.0.1",
+    "mapbox-gl": "^1.11.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-scss": "^2.1.1",
+    "prettier": "^2.0.5",
+    "snowpack": "^2.6.0",
+    "typescript": "^3.9.5"
+  }
+}
